@@ -27,3 +27,12 @@ std::string getErrorMessage(ErrorCode code) {
 	}
 	return "Out of range";
 }
+
+bool doPasswordMatch(std::string password1, std::string password2) {
+	if(password1 == password2) {
+		return true;
+	}
+	return false;
+}
+
+
