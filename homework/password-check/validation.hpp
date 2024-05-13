@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-enum class ErrorCode 
-{
+enum class ErrorCode {
     Ok,
     PasswordNeedsAtLeastNineCharacters,
     PasswordNeedsAtLeastOneNumber,
@@ -16,4 +15,3 @@ std::string getErrorMessage(ErrorCode);
 bool doPasswordsMatch(std::string, std::string);
 ErrorCode checkPasswordRules(std::string);
 ErrorCode checkPassword(std::string, std::string);
-
